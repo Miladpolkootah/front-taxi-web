@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/05177c7f91.js" crossorigin="anonymous"></script>
+    <script src="/JS/main.js" defer></script>
+    <title>Tap30</title>
+</head>
+<body>
+    <!--header-->
+    <header class="mainheader">
+        <nav class="mainheader__nav">
+          <div class="mainheader__nav--cf">  
+           <div class="mainheader__nav__sec1">
+                <a href="#">
+                    <img src="/assets/images/tapsinav.png" alt=" tapsi logo ">
+                </a>
+            </div>
+            <div class="mainheader__nav__sec2">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+           </div>
+            <div class="mainheader__nav__sec3">
+                <ul>
+                    <li>
+                        <a href="#">Weblog</a>
+                    </li>
+                    <li>
+                        <a href="#">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="#">Bussiness Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Drivers</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="downloadbtn">
+               <a href="#">Download App</a>
+           </div>
+           </div>
+        </nav>
+    </header>
+    <!--header-->
+    <main>
+        <!--Hero section-->
+        <section class="herosec">
+            <article class="herosec__banner">
+                <picture>
+                    <source srcset="/assets/images/banner.png" type="image/png" media="(max-width: 768px)">
+                    <source srcset="/assets/images/banner min1440.png" type="image/png" media="(min-width: 768px)">
+                    <img src="/assets/images/banner min1440.png" alt="top banner of tapsi">
+                </picture>
+            </article>
+           <article class="herosec__btns">
+              <div class="herosec__btns--div">
+                <h1>Tapsi</h1>
+                <h2>Taxi reservasion application</h2>
+               <div class="herosec__btns--div-btn">
+                <div class="btnfill"><a class="app-download" href="#">Download  App</a></div>
+                <div class="btnfill"><a class="passenger-app" href="#">Passengers application</a></div>
+                <div class="btnoutline"><a class="driver-app" href="#">Drivers Application</a></div>
+                <div class="btnoutline btnoutline2"><a class="driver-signup" href="#">driver sign up</a></div>
+               </div>
+            </div>
+           </article>
+            <article class="herosec__phone">
+               <div>
+                <img src="/assets/images/mockup-phone.png"alt="tapsi application">
+               </div>
+            </article>
+           </section>
+           <!--Hero section-->
+           <div id="maincontnt">
+           <!--Service section-->
+           <section class="service">
+            <article class="service__menu">
+                <h2>Tapsi Services</h2>
+                <div class="service__menu__icons">
+                    <a class="tab classicbtn opaser" data-tab-target="tapsi-classic-content" href="#">
+                        <img src="/assets/images/cc-classic.png" alt="Tapsi classic">
+                        <p>Classic Tapsi</p>
+                    </a>
+                    <a class="tab motopeyk" data-tab-target="motopeyk-content" href="#">
+                        <img src="/assets/images/cc-motopeyk.png" alt="Tapsi motopeyk">
+                        <p>Motopeyk</p>
+                    </a>
+                    <a class="tab autopeyk" data-tab-target="autopeyk-content" href="#">
+                        <img src="/assets/images/cc-autopeyk.png" alt="Tapsi autopeyk">
+                        <p>autopeyk</p>
+                    </a>
+                    <a class="tab tapsi-plus" data-tab-target="tapsi-plus-content" href="#">
+                        <img src="/assets/images/cc-plus.png" alt="tapsi plus">
+                        <p>tapsi plus</p>
+                     </a>
+                    <a class="tab telephone-tapsi" data-tab-target="telephone-tapsi-content" href="#">
+                        <img src="/assets/images/cc-tel.png" alt="Tapsu Tel">
+                        <p>Telephon Tapsi</p>
+                    </a>
+                    <a class="tab hamyar" data-tab-target="hamyar-content" href="#">
+                        <img src="/assets/images/cc-hamyar.png" alt="Tapsi hamyar">
+                        <p>Hamyar</p>
+                    </a>
+                    <a class="tab hamxat" data-tab-target="hamxat-content" href="#">
+                        <img src="/assets/images/cc-hamkhat.png" alt="Tapsi Hamxat">
+                        <p>Hamxat</p>
+                    </a>
+                    <a class="tab Taxi" data-tab-target="taxi-content" href="#">
+                        <img src="/assets/images/cc-taxi.png" alt="Taxi">
+                        <p>Taxi</p>
+                    </a>
+                    <a class="tab tapsi-line" data-tab-target="tapsi-line-content" href="#">
+                        <img src="/assets/images/cc-line.png" alt="Tapsi Line">
+                        <p>Tapsi Line</p>
+                    </a>
+                </div>
+            </article>
+            <article class="service__content showservice" id="tapsi-classic-content">
+                <div class="service__content--text">
+                    <h3>Tapsi Classic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam assumenda eveniet quis delectus magni laboriosam rem numquam, ex excepturi facere laudantium maxime voluptatem adipisci asperiores veniam libero iure nobis amet temporibus. Tempore, recusandae voluptatibus. Adipisci consectetur praesentium, odio laudantium aut distinctio expedita repellat accusantium voluptas cumque voluptatem dolorem illum natus aspernatur saepe aliquid. Rem sequi temporibus magni ratione atque!</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-classic.webp" alt="">
+                </div>
+            </article>
+            <article class="service__content" id=motopeyk-content>
+                <div class="service__content--text">
+                    <h3>Motopeyk</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo quisquam ea sit fugiat veritatis veniam dolore, repellat harum sapiente doloribus, quas omnis quae excepturi praesentium libero nisi commodi? Ratione ipsa nostrum impedit a eum dicta incidunt sequi adipisci rem, accusantium neque eaque laboriosam, totam labore velit vero consequuntur tempora!</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-motopeyk.webp" alt="Tapsi motopeyk">
+                </div>
+            </article>
+            <article class="service__content" id="autopeyk-content">
+                <div class="service__content--text">
+                    <h3>Autopeyk</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dignissimos illo sequi saepe quam beatae nostrum doloremque perspiciatis? Culpa quisquam dignissimos cumque. Cumque, qui delectus consequatur commodi vel temporibus perspiciatis.</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-autopeyk.webp" alt="">
+                </div>
+            </article>
+            <article class="service__content" id="tapsi-plus-content">
+                <div class="service__content--text">
+                    <h3>Tapsiplus</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nihil. Enim similique voluptatum repellat cupiditate laboriosam magni. Aut, harum. Enim perferendis at quo omnis impedit quaerat voluptatem harum maxime quos odit quis culpa error ullam itaque, atque similique iste quasi. Distinctio minima blanditiis dicta ipsum! Illum ad, recusandae numquam iste quia doloribus at? Aperiam eum fugit necessitatibus expedita obcaecati. Sint et quas dolores deleniti eveniet, rerum culpa minus totam vel!</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-plus.webp" alt="Tapsi plus">
+                </div>
+            </article>
+            <article class="service__content" id="telephone-tapsi-content">
+                <div class="service__content--text">
+                    <h3>Telephone tapsi</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad autem labore accusantium tempora. Consequuntur id corrupti nihil tenetur distinctio nesciunt tempore, veritatis velit doloribus repudiandae aliquid aliquam fuga ex dolorem quisquam omnis vero laboriosam nisi ipsa rerum soluta et amet accusantium. Officiis reiciendis adipisci totam.</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-tel.webp" alt="Tapsi with telephones">
+                </div>
+            </article>
+            <article class="service__content" id="hamyar-content">
+                <div class="service__content--text">
+                    <h3>Hamyar</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti harum enim alias, eum accusantium minus ad quis totam beatae nesciunt ab fugiat quos magni assumenda incidunt. Dignissimos rerum harum earum laboriosam animi similique unde quod doloremque, dolorum excepturi reprehenderit tempore repudiandae tempora cupiditate ad iusto, blanditiis ipsa autem quis? Laboriosam praesentium accusantium fugiat facere eum facilis ratione adipisci tempora, hic cupiditate deserunt quos blanditiis quam.</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-hamyar.webp" alt="Tapsi Hamyar">
+                </div>
+            </article>
+            <article class="service__content" id="hamxat-content">
+                <div class="service__content--text">
+                    <h3>Hamxat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos odio quis eos libero officia, obcaecati pariatur alias consequuntur cum inventore quidem necessitatibus placeat et minima, rerum consequatur sequi perferendis! Maiores perspiciatis numquam nostrum incidunt quae ipsum ea facere, quisquam voluptate aspernatur eos aliquid, sequi dignissimos reiciendis? Dignissimos, quas laboriosam!</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-hamkhat.webp" alt="Tapsi Hamxat">
+                </div>
+            </article>
+            <article class="service__content" id="taxi-content">
+                <div class="service__content--text">
+                    <h3>Taxi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos odio quis eos libero officia, obcaecati pariatur alias consequuntur cum inventore quidem necessitatibus placeat et minima, rerum consequatur sequi perferendis! Maiores perspiciatis numquam nostrum incidunt quae ipsum ea facere, quisquam voluptate aspernatur eos aliquid, sequi dignissimos reiciendis? Dignissimos, quas laboriosam!</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-taxi.webp" alt="Taxi Tapsi">
+                </div>
+            </article>
+            <article class="service__content" id="tapsi-line-content">
+                <div class="service__content--text">
+                    <h3>Tapsi Line</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos odio quis eos libero officia, obcaecati pariatur alias consequuntur cum inventore quidem necessitatibus placeat et minima, rerum consequatur sequi perferendis! Maiores perspiciatis numquam nostrum incidunt quae ipsum ea facere, quisquam voluptate aspernatur eos aliquid, sequi dignissimos reiciendis? Dignissimos, quas laboriosam!</p>
+                </div>
+                <div>
+                    <img class="service--img" src="/assets/images/illus-line.webp" alt="Tapsi Line">
+                </div>
+            </article>
+        </section>
+        <!--service section-->
+        <!--futured section-->
+        <section id="futuredsec">
+            <section class="fusec__one">
+                  <article class="fusec__image fusec__image--one">
+                      <img src="/assets/images/i-mac 1.png" alt="an i mac that show analytics">
+                  </article>
+                  <article class="fusec__content fusec__content--one">
+                      <h2>Tap30 offers for Business</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum delectus facilis modi quod cumque corrupti neque, nam id qui fugit obcaecati harum animi earum tempora quasi molestias? Dolorem voluptatum dolorum quasi rem error sunt sapiente quis explicabo optio! Quam, harum?</p>
+                      <button class="btn  btn--secendary btn-block">Signup and see the panel</button>
+                  </article>
+            </section>
+            <section class="fusec__tow">
+                   <article class="fusec__image fusec__image--tow"> 
+                       <img src="/assets/images/macbook 1.png" alt="a macbook of tap30">
+                   </article>
+                   <article class="fusec__content fusec__content--tow">
+                       <h2> Tapsi Charge methods</h2>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, blanditiis harum officia corporis, placeat, reprehenderit expedita dolore illum sunt dolores eaque. Iure fugit, dolores corrupti veniam impedit perferendis non eius? Maxime, nam praesentium ab corrupti labore modi consequatur asperiores magni.</p>
+                       <button class="btn  btn--secendary btn-block">Signup and see the panel</button>
+                    </article>
+            </section>
+        </section>
+        <!--futured section-->
+          <!--plan section-->
+        <h2 class="plantitle">Reservation Taxi plans</h2>
+        <setion class="sec-plan">
+            
+            <article class="plan plan-sec-flex plan__one">
+                <section class="plan__secone">
+                  <article>
+                    <span class="badge">20% off</span>
+                </article>
+                  <article>
+                      <p>Normal</p>
+                  </article>
+                  <article>
+                      <p>100$<span style="font-size: 2rem;">/month</span></p>
+                  </article>
+                  <article>
+                      <h2>Normal Cars</h2>
+                  </article>
+                </section>
+                <section class="plan__sectow">
+                    <article>
+                        <ul class="list list--tick list--f-size">
+                            <li class="list__item">Lorem ipsum dolor sit.</li>
+                            <li class="list__item">Lorem, ipsum dolor.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </article>
+                </section>
+                
+                <section class="plan__secthree">
+                    <article class="btn__plan--flex">
+                        <button class="btn  btn--secendary btn-block">Order</button>
+                    </article>
+                </section>
+            </article>
+            <article class="plan plan__tow" >
+                <section class="plan__secone plan__secone--primeback">
+                    <article>
+                        <span class="badge-secendory">10% off</span>
+                    </article>
+                      <article>
+                          <p>Prime</p>
+                      </article>
+                      <article>
+                          <p>120$<span style="font-size: 2rem;">/month</span></p>
+                      </article>
+                      <article>
+                          <h2> luxtury Cars</h2>
+                      </article>
+                      
+                </section>
+                <section>
+                    <article>
+                        <ul class="list list--tick list--f-size">
+                            <li class="list__item">Lorem ipsum dolor sit.</li>
+                            <li class="list__item">Lorem, ipsum dolor.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="plan__secthree">
+                    <article class="btn__plan--flex">
+                        <button class="btn  btn--secendary btn-block" style="background-color: var(--color-main);">Order</button>
+                    </article>
+                </section>
+            </article>
+            <article class="plan plan__three">
+                <section class="plan__secone ">
+                    <article>
+                        <span class="badge">20% off</span>
+                    </article>
+                      <article>
+                          <p>Normal</p>
+                      </article>
+                      <article>
+                          <p>400$<span style="font-size: 2rem;">/month</span></p>
+                      </article>
+                      <article>
+                          <h2>perfect Cars</h2>
+                      </article>
+                </section>
+                <section>
+                    <article>
+                        <ul class="list list--tick list--f-size">
+                            <li class="list__item">Lorem ipsum dolor sit.</li>
+                            <li class="list__item">Lorem, ipsum dolor.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet consectetur.</li>
+                            <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="plan__secthree">
+                    <article class="btn__plan--flex">
+                        <button class="btn  btn--secendary btn-block">Order</button>
+                    </article>
+                </section>
+            </article>
+        </setion>
+       
+        <section class="gifts">
+            <article class="gifts__title">
+                <h2>Gifts for you</h2>
+            </article>
+            <div class="gifts__align">
+            <article class="gifts__item">
+                 <div>
+                     <img src="/assets/images/dino-reichmuth-A5rCN8626Ck-unsplash 7.png" alt="gift photo">
+                 </div>
+                 <div class="gifts__card">
+                    <div class="gifts__card--header"> 
+                     <div class="wije">
+                        <span class="badge-secendory">special</span>
+                     </div>
+                   <div class="textwij">
+                        <p>free travel &bull; 3 days</p>
+                     </div>
+                    </div>
+                     <div class="titlewij">
+                         <h3>
+                             Travel to Kavir loot
+                         </h3>
+                     </div>
+                     <div class="gifts__item--iconas">
+                     <div class="reaction">
+                          <picture>
+                              <img src="/assets/images/view.png" alt="view">
+                              <figcaption>22</figcaption>
+                          </picture>
+                          <picture>
+                              <img src="/assets/images/like.png" alt="Like">
+                              <figcaption>15</figcaption>
+                          </picture>
+                     </div>
+                     <div class="delar">
+                         <div><img src="/assets/images/bin.png" alt="bin"></div>
+                         <div><img src="/assets/images/archive.png" alt="archive"></div>
+                     </div>
+                     </div>
+                     <div class="gifts__item--avatars">
+                         <div><img src="/assets/images/avatar1.png" alt="awds"></div>
+                         <div class="avato"><img src="/assets/images/avatar2.png" alt=""></div>
+                         <div class="avato"><img src="/assets/images/avatar3.png" alt=""></div>
+                         <div class="avato"><img src="/assets/images/avatar5.png" alt=""></div>
+                         <div class="avato">+10</div>
+                     </div>
+                 </div>
+            </article>
+            <article class="gifts__item">
+                <div>
+                    <img src="/assets/images/dino-reichmuth-A5rCN8626Ck-unsplash 7.png" alt="gift photo">
+                </div>
+                <div class="gifts__card">
+                   <div class="gifts__card--header"> 
+                    <div class="wije">
+                       <span class="badge-secendory">special</span>
+                    </div>
+                  <div class="textwij">
+                       <p>free travel &bull; 3 days</p>
+                    </div>
+                   </div>
+                    <div class="titlewij">
+                        <h3>
+                            Travel to Kavir loot
+                        </h3>
+                    </div>
+                    <div class="gifts__item--iconas">
+                    <div class="reaction">
+                         <picture>
+                             <img src="/assets/images/view.png" alt="view">
+                             <figcaption>22</figcaption>
+                         </picture>
+                         <picture>
+                             <img src="/assets/images/like.png" alt="Like">
+                             <figcaption>15</figcaption>
+                         </picture>
+                    </div>
+                    <div class="delar">
+                        <div><img src="/assets/images/bin.png" alt="bin"></div>
+                        <div><img src="/assets/images/archive.png" alt="archive"></div>
+                    </div>
+                    </div>
+                    <div class="gifts__item--avatars">
+                        <div><img src="/assets/images/avatar1.png" alt="awds"></div>
+                        <div class="avato"><img src="/assets/images/avatar2.png" alt=""></div>
+                        <div class="avato"><img src="/assets/images/avatar3.png" alt=""></div>
+                        <div class="avato"><img src="/assets/images/avatar5.png" alt=""></div>
+                        <div class="avato">+10</div>
+                    </div>
+                </div>
+           </article>
+           <article class="gifts__item">
+            <div>
+                <img src="/assets/images/dino-reichmuth-A5rCN8626Ck-unsplash 7.png" alt="gift photo">
+            </div>
+            <div class="gifts__card">
+               <div class="gifts__card--header"> 
+                <div class="wije">
+                   <span class="badge-secendory">special</span>
+                </div>
+              <div class="textwij">
+                   <p>free travel &bull; 3 days</p>
+                </div>
+               </div>
+                <div class="titlewij">
+                    <h3>
+                        Travel to Kavir loot
+                    </h3>
+                </div>
+                <div class="gifts__item--iconas">
+                <div class="reaction">
+                     <picture>
+                         <img src="/assets/images/view.png" alt="view">
+                         <figcaption>22</figcaption>
+                     </picture>
+                     <picture>
+                         <img src="/assets/images/like.png" alt="Like">
+                         <figcaption>15</figcaption>
+                     </picture>
+                </div>
+                <div class="delar">
+                    <div><img src="/assets/images/bin.png" alt="bin"></div>
+                    <div><img src="/assets/images/archive.png" alt="archive"></div>
+                </div>
+                </div>
+                <div class="gifts__item--avatars">
+                    <div><img src="/assets/images/avatar1.png" alt="awds"></div>
+                    <div class="avato"><img src="/assets/images/avatar2.png" alt=""></div>
+                    <div class="avato"><img src="/assets/images/avatar3.png" alt=""></div>
+                    <div class="avato"><img src="/assets/images/avatar5.png" alt=""></div>
+                    <div class="avato">+10</div>
+                </div>
+            </div>
+       </article>
+            </div> 
+          </section>
+          <section class="accordiansec">
+            <article class="accordian">
+                <header class="accordian__header-first accordian__header" >
+                    <h2 class="accordian__heading">resome</h2>
+                    <img class="accordian__icon" data-accordian-target="resome"  src="/assets/images/circle-chevron-down-solid.svg">
+                </header>
+                <div class="accordian__content " id="resome" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eaque possimus, earum sed minima vel corporis ea libero nobis assumenda voluptatibus aliquam alias natus reiciendis placeat molestiae numquam dicta necessitatibus!
+                </div>
+                <header class="accordian__header" >
+                   <h2 class="accordian__heading">Certificate</h2>
+                   <img class="accordian__icon" data-accordian-target="certificate"  src="/assets/images/circle-chevron-down-solid.svg">
+               </header>
+               <div class="accordian__content" id="certificate" >
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eaque possimus, earum sed minima vel corporis ea libero nobis assumenda voluptatibus aliquam alias natus reiciendis placeat molestiae numquam dicta necessitatibus!
+               </div>
+               <header class="accordian__header-last accordian__header" >
+                   <h2 class="accordian__heading">Univercity</h2>
+                   <img class="accordian__icon" data-accordian-target="univerciti"  src="/assets/images/circle-chevron-down-solid.svg">
+                </header> 
+               <div class="accordian__content" id="univerciti" >
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eaque possimus, earum sed minima vel corporis ea libero nobis assumenda voluptatibus aliquam alias natus reiciendis placeat molestiae numquam dicta necessitatibus!
+               </div> 
+            </article>
+            <article class="accordiansec__content">
+                <h2>How to become a Driver?!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non magnam odit nemo incidunt perspiciatis laudantium, dicta facilis repudiandae iusto minima voluptate facere placeat eveniet possimus saepe amet praesentium itaque laborum modi fuga inventore. Error recusandae, accusamus iusto voluptatum dolor fugit quia aspernatur accusantium repellendus? Dolorum sequi quidem doloremque nihil a similique.</p>
+            </article>
+        </section>
+        <section class="contactus">
+            <article class="contactus__heading">
+                <h2>Contact us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article class="contactus__social">
+                <div class="contactus__socialtwiter"></div>
+                <div class="contactus__sociallinkdin"></div>
+                <div class="contactus__socialfacebook"></div>
+            </article>
+            <article class="contactus__address">
+                     <ul>
+                         <li>6386 Spring St undefined Anchorage, 
+                            Georgia 12473 United States</li>
+                         <li>(843) 555-0130</li>
+                         <li>willie.jennings@example.com</li>
+                     </ul>
+            </article>
+            <article class="contactus__map">
+                <img src="/assets/images/map.jpg" alt="map">
+            </article>
+            <article class="contactus__form">
+               <h3>Contact us</h3>
+                    <form class="contactus__form--main">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+            </article>  
+        </section>
+    </div>
+    </main>
+    <footer class="footermain">
+        <div class="footermain--CF">
+          <article class="footermain__logo">
+              <img src="/assets/images/tapsilogo.png" alt="the logo of Tapsi">
+              <h3>Taxi reservasion application</h3>
+              <p>Copyright for Tapsi</p>
+          </article>
+          <article class="footermain__links">
+              <h6>Tapsi</h6>
+              <a href="#">Lorem, ipsum dolor.</a>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+              <a href="#">Lorem, ipsum.</a>
+              <a href="#">Lorem, ipsum dolor.</a>
+          </article>
+          <article class="footermain__links">
+              <h6>passengers</h6>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit.</a>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem, ipsum.</a>
+          </article>
+          <article class="footermain__links">
+              <h6>Drivers</h6>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <a href="#">Lorem ipsum dolor sit.</a>
+              <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+              <a href="#">Lorem, ipsum.</a>
+              <a href="#">Lorem, ipsum dolor.</a>
+              <a href="#">Lorem, ipsum dolor.</a>
+          </article>
+          <article class="footermain__links">
+              <h6>Bussiness</h6>
+              <a href="#">Lorem, ipsum.</a>
+              <a href="#">Lorem, ipsum dolor.</a>
+              <a href="#">Lorem ipsum dolor sit.</a>
+          </article>
+          <article class="footermain__ours">
+            <div>
+              <img src="/assets/images/home.png" alt="home reservasion">
+            </div>
+            <div>
+              <img src="/assets/images/laod.png" alt="laxora">
+              </div>
+            <div>
+              <img src="/assets/images/restaurant.png" alt=" restaurant">
+            </div>
+          </article>
+         </div>   
+          <article class="footermain__end">
+              <P>Lorem, ipsum dolor sit amet consectetur adipisicing.</P>
+              <div class="footermain__end--social">
+                 <img src="/assets/images/telegram.png" alt="">
+                 <img src="/assets/images/facebook (1).png" alt="">
+                 <img src="/assets/images/twitter.png" alt="">
+                 <img src="/assets/images/linkedin.png" alt="">
+                 <img src="/assets/images/instagram.png" alt="">
+              </div>
+          </article>
+      </footer>
+</body>
+</html>
